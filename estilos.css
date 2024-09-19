@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #F5F7F8;
+    --Preverse-color: #000000;
+    --secondary-color: #FFF078;
+    --tertiary-color: #FF4191;
+    --quaternary-color: #E90074;
+    --text-color: #000000;
+    --Treverse-color: #F5F7F8;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #FFF078, #FF4191);
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content a, ul{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-container {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+.nav-container h1 {
+    color: #F5F7F8;
+    font-size: 2rem;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    background-image: url(img/Logo/Iniciales/FneLam.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 30px;
+    padding: 0;
+}
+.nav a {
+    color: #F5F7F8;
+}
+.nav a:hover {
+    color: #f5f7f88d;
+}
+.services {
+    height: 600px;
+    width: 100%;
+    background-color: #F5F7F8;
+}
+.about {
+    height: 600px;
+    width: 100%;
+    background-color: #FF4191;
+}
+.plans {
+    height: 600px;
+    width: 100%;
+    background-color: #E90074;
+}
+.clients {
+    height: 600px;
+    width: 100%;
+    background-color: #FFF078;
+}
+.contact {
+    height: 600px;
+    width: 100%;
+    background-color: #F5F7F8;
+}
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+}
