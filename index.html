@@ -195,10 +195,26 @@
                         <img src="img/Plantillas/Diseño 5-PC.png" alt="diseño5">
                     </div>
                 </div>
-
                 <div class="contact">
                     <h3>Contáctanos</h3>
                     <p>¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Completa el formulario a continuación o envíanos un correo electrónico a tu-email@ejemplo.com y nos pondremos en contacto contigo lo antes posible.</p>
+                    <form action="https://formsubmit.co/your@email.com" method="POST">
+                        <div class="input-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="Nombre">
+                            <label for="phone">Telefono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Telefono">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                        </div>
+                        <input class="btn" type="submit" value="Enviar">
+                        <div class="form-txt">
+                            <a href="#">Politica de Privacidad</a>
+                            <a href="#">Terminos y condiciones</a>
+                        </div>
+                    </form>
                 </div>
 
                 <footer class="footer">

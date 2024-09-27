@@ -17,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--primary-color);
 }
 .main {
     width: 100%;
@@ -83,12 +84,13 @@ body {
     box-shadow: 0 1px 1px var(--tertiaty-color);
 }
 .services {
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .services-1 {
     height: 80%;
@@ -123,6 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
+    margin-bottom: 50px;
 }
 .about-1 img {
     height: 500px;
@@ -149,9 +152,10 @@ body {
     background-color:#ffef78;
 }
 .plans {
-    height: 1250px;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
+    margin-bottom: 50px;
 }
 .plans h3 {
     font-size: 2rem;
@@ -204,14 +208,15 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    height: 1500px;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
+    margin-bottom: 50px;
 }
 .clients img {
     height: 400px;
     width: 400px;
-    margin: 20px;
+    margin: 40px;
 }
 .clients h3 {
     font-size: 2rem;
@@ -222,12 +227,52 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
     text-align: justify;
     font-size: 1.2rem;
     margin: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .contact {
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
+    margin-bottom: 50px;
+}
+.contact p {
+    margin: 0 50px 50px 50px;
+    font-size: 1.2rem;
+}
+.contact h3 {
+    font-size: 2rem;
+    box-shadow: 0px 10px 1000px var(--secondary-color);
+    background-color:#ffef78;
+    width: 95%;
+}
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px var(--secondary-color);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+label {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    outline: none;
 }
 .footer ul {
     display: flex;
