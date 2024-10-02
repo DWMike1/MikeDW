@@ -16,19 +16,19 @@
     <link rel="stylesheet" href="css/Normalize.css"> 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <script defer src="js/apps.js"></script>
     <title>Mike Diseño Web</title>
 </head>
 <body>
     <div class="main">
         <div class="container">
             <div class="content">
-
                 <div class="nav-container">
                     <div class="logo"><img src="img/Logo/Iniciales/FneLam.png" alt="logo"></div>
                     <h1>Bienvenido a Mike Diseño Web</h1>
                     <nav class="nav">
                         <ul class="nav-list">
-                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="#services" class="selected">Servicios</a></li>
                             <li><a href="#about">Conócenos</a></li>
                             <li><a href="#plans">Planes</a></li>
                             <li><a href="#clients">Clientes</a></li>
@@ -36,8 +36,7 @@
                         </ul>
                     </nav>
                 </div>
-
-            <div class="services">
+            <div class="services" id="services">
                 <div class="services-1">
                     <img src="img/Plantillas/Diseño 5-all.png" alt="Diseño1">
                 </div>
@@ -48,8 +47,7 @@
                 <p>¡Accede a la web con nosotros!</p>
                 </div>
             </div>
-
-                <div class="about">
+                <div class="about" id="about">
                     <div class="about-1">
                         <img src="img/foto.jpg" alt="foto">
                     </div>
@@ -59,8 +57,7 @@
                         <h3>¡Si buscas una presencia en línea a bajo costo, Mike Diseño Web es la opción ideal!</h3>
                     </div>
                 </div>
-
-                <div class="plans">
+                <div class="plans" id="plans">
                     <div class="plans-title">
                     <h3>¡Sitios web a tú medida!</h3>
                     <p>En Mike Diseño Web, entendemos que cada negocio es único. Por eso, creamos sitios web a medida, adaptados al estilo y la visión de nuestros clientes. Ya sea una tienda en línea, un blog o una página corporativa, nos aseguramos de que el diseño refleje la identidad de la marca y cumpla con los objetivos comerciales. Nuestro enfoque es satisfacer las necesidades específicas de cada cliente, brindando soluciones creativas y funcionales a precios accesibles para todos.</p>
@@ -181,8 +178,7 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="clients">
+                <div class="clients" id="clients">
                     <div class="clients-1">
                         <h3>Proyectos Destacados</h3>
                         <p>Explora nuestros proyectos de clientes para inspirarte y conocer la calidad de nuestro trabajo.</p>
@@ -195,28 +191,36 @@
                         <img src="img/Plantillas/Diseño 5-PC.png" alt="diseño5">
                     </div>
                 </div>
-                <div class="contact">
+                <div class="contact" id="contact">
+                    <div class="input-group">
                     <h3>Contáctanos</h3>
-                    <p>¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Completa el formulario a continuación o envíanos un correo electrónico a tu-email@ejemplo.com y nos pondremos en contacto contigo lo antes posible.</p>
                     <form action="https://formsubmit.co/your@email.com" method="POST">
-                        <div class="input-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" placeholder="Nombre">
-                            <label for="phone">Telefono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Telefono">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <label for="message">Mensaje</label>
-                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                        </div>
-                        <input class="btn" type="submit" value="Enviar">
-                        <div class="form-txt">
-                            <a href="#">Politica de Privacidad</a>
-                            <a href="#">Terminos y condiciones</a>
-                        </div>
-                    </form>
+                            <p>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" id="name" >
+                            </p>
+                            <p>
+                                <label for="phone">Telefono</label>
+                                <input type="tel" name="phone" id="phone" >
+                            </p>
+                            <p class="block">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </p>
+                            <p class="block">
+                                <label for="message">Mensaje</label>
+                                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            </p>
+                            <p class="block">
+                                <input class="btn" type="submit" value="Enviar">
+                            </p>
+                        </form>
+                    </div>
+                            <div class="form-txt">
+                                <h4>¿Necesitas mas información?</h4>
+                                <p>¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Completa el formulario a continuación o envíanos un correo electrónico a tu-email@ejemplo.com y nos pondremos en contacto contigo lo antes posible.</p>
+                            </div>
                 </div>
-
                 <footer class="footer">
                     <ul class="footer-nav">
                         <li><a href="#services">Servicios</a></li>
@@ -227,7 +231,6 @@
                     </ul>
                     &copy;MikeWD
                 </footer>
-
             </div>
         </div>
     </div> 
