@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #F5F7F8;
+    --Preverse-color: #0a0a0a;
+    --secondary-color: #FFF078;
+    --tertiary-color: #FF4191;
+    --quaternary-color: #E90074;
+    --text-color: #0a0a0a;
+    --Treverse-color: #F5F7F8;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-color);
+}
+body > * {
+    text-align: center;
+    padding: 10px;
+    outline: solid 1px var(--Preverse-color);
+    border-radius: 10px;
+}
+.header {
+    grid-area: header;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.nav {
+    grid-area: nav;
+    background-color: var(--secondary-color);
+    color: var(--Preverse-color);
+}
+.side {
+    grid-area: side;
+    background-color: var(--tertiary-color);
+    color: var(--Treverse-color);
+}
+.main {
+    grid-area: main;
+    background-color: var(--quaternary-color);
+    color: var(--Treverse-color);
+}
+.footer {
+    grid-area: footer;
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+}
+body {
+    display: grid;
+    grid: 
+    "nav"    100px
+    "header" 50px
+    "main"   auto
+    "side"   100px
+    "footer" 100px ; 
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid: 
+        "header  nav"     100px
+        "side    main"    auto
+        "footer  footer"  100px / 
+        200px    auto;
+    }
+}
