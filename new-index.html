@@ -27,7 +27,7 @@
             <img src="img/Logo/Iniciales/FneLam.png" alt="logo">
         </div>
         <h1>Bienvenido a Mike Diseño Web</h1>
-        <i class="fa-solid fa-bars"></i>
+        <button class="abrir_menu" aria-label="Abrir Menú"><i class="fa-solid fa-bars"></i></button>
     </div>
 
     <div class="nav">
@@ -37,6 +37,7 @@
             <li><a href="#plans">Planes</a></li>
             <li><a href="#clients">Clientes</a></li>
             <li><a href="#contact">Contacto</a></li>
+            <button class="cerrar_menu" aria-label="Cerrar Menú"><i class="fa-solid fa-xmark"></i> </button>
         </ul>
     </div>
 
@@ -68,8 +69,6 @@
             <h2>¡Sitios web a tú medida!</h2>
             <p>En Mike Diseño Web, entendemos que cada negocio es único. Por eso, creamos sitios web a medida, adaptados al estilo y la visión de nuestros clientes. Ya sea una tienda en línea, un blog o una página corporativa, nos aseguramos de que el diseño refleje la identidad de la marca y cumpla con los objetivos comerciales. Nuestro enfoque es satisfacer las necesidades específicas de cada cliente, brindando soluciones creativas y funcionales a precios accesibles para todos.</p>
             </div>
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
             <div class="plans-table">
                 <table>
                     <thead>
@@ -204,22 +203,24 @@
     <div class="contact" id="contact">
         <div class="input-group">
             <h2>Contáctanos</h2>
-            <form action="https://formsubmit.co/your@email.com" method="POST">
+            <form action="https://formsubmit.co/contacto@dwmike.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://dwmike.com">
                     <p>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name" >
+                        <input required type="text" name="name" id="name" >
                     </p>
                     <p>
                         <label for="phone">Telefono</label>
-                        <input type="tel" name="phone" id="phone" >
+                        <input required type="tel" name="phone" id="phone" >
                     </p>
                     <p class="block">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input required type="email" name="email" id="email">
                     </p>
                     <p class="block">
                         <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea required type="message" id="message" cols="30" rows="5"></textarea>
                     </p>
                     <p class="block">
                         <input class="btn" type="submit" value="Enviar">
