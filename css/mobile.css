@@ -1,11 +1,10 @@
 :root {
-    --primary-color: #F5F7F8;
-    --Preverse-color: #0a0a0a;
-    --secondary-color: #FFF078;
-    --tertiary-color: #FF4191;
-    --quaternary-color: #E90074;
-    --text-color: #0a0a0a;
-    --Treverse-color: #F5F7F8;
+    --primary-color: #FDFFE2;
+    --Preverse-color: #1A2130;
+    --secondary-color: #83B4FF;
+    --tertiary-color: #5A72A0;
+    --text-color: #1A2130;
+    --Treverse-color: #FDFFE2;
 }
 html {
     scroll-behavior: smooth;
@@ -39,6 +38,7 @@ body {
     justify-content: space-around;
     text-align: center;
     background-color: var(--primary-color);
+    z-index: 1;
 }
 .header img {
     height: 3rem;
@@ -71,6 +71,7 @@ body {
 .nav {
     grid-area: nav;
     color: var(--text-color);
+    z-index: 1;
 }
 .nav a::after {
     content: none;
@@ -186,8 +187,141 @@ td {
 tbody{
     cursor: pointer;
 }
+tr {
+    position: relative;
+}
 .fijo {
     background-color: var(--tertiary-color);
+}
+.tm:hover::before {
+        content: "Tamaño del plan";
+        background-color: var(--Preverse-color);
+        color: var(--Treverse-color);
+        top: -0.7em;
+        padding: 5px 5px;
+        border-radius: 10px;
+        position: absolute;
+        white-space: nowrap;
+}
+.vlt:hover::before {
+    content: "Valor Total";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.vlm:hover::before {
+    content: "Valor Mensual";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.dpl:hover::before {
+    content: "Duración del Plan";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.dp:hover::before {
+    content: "Personalización del Dominio";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.ho:hover::before {
+    content: "Tipo de Hosting o almacenaje en servidor";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.pe:hover::before {
+    content: "Personalización de página";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.dsp:hover::before {
+    content: "Disponibilidad del Soporte";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.so:hover::before {
+    content: "Acuerdo de nivel de servicio (SLA) / Tiempo de respuesta máximo";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.co:hover::before {
+    content: "Disponibilidad de correo personalizado";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.di:hover::before {
+    content: "Modificaciones o Actualizaciones";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.sp:hover::before {
+    content: "Seguridad / Protección";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+.ac:hover::before {
+    content: "Copias de Seguridad";
+    background-color: var(--Preverse-color);
+    color: var(--Treverse-color);
+    top: -0.7em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    position: absolute;
+    white-space: nowrap;
 }
 table:has(tr > *:nth-child(1):hover) tr > *:nth-child(1),
 table:has(tr > *:nth-child(2):hover) tr > *:nth-child(2),
