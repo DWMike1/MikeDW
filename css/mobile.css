@@ -8,14 +8,15 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
     height: 100%;
 }
 body {
     min-height: 100%;
     margin: 0;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "PT Sans", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
     background-color: var(--primary-color);
     display: grid;
     grid: 
@@ -27,6 +28,7 @@ body {
     "clients"  auto
     "contact"  auto
     "footer"   4rem ;
+    font-size: 1.2rem !important;
 }
 .header {
     position:fixed;
@@ -44,9 +46,11 @@ body {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
+    padding: 0.5rem;
 }
 .header i {
     font-size: 3rem;
+    padding: 0.5rem;
 }
 .header h1 {
     margin: 0;
@@ -93,8 +97,8 @@ body {
     height: 100%;
     place-items: center;
     background-color: var(--primary-color);
-    line-height: 2.5rem;
-    font-size: 2rem;
+    line-height: 4.5rem;
+    font-size: 3rem;
     opacity: 0;
     overflow-y: auto;
     pointer-events: none;
@@ -113,12 +117,14 @@ body {
     auto;
     place-items: center;
     text-align: center;
-    scroll-margin-top: 3.5rem;
-    margin-bottom: 5rem;
 }
 .services-1 {
     grid-area: services-1;
     margin: 1rem;
+}
+.services-1 h2{
+    margin: 0;
+    padding: 2rem 0 2rem 0;
 }
 .services-1 img {
     width: 30rem;
@@ -127,20 +133,21 @@ body {
 .services-2 {
     grid-area: services-2;
     text-align: center;
-    margin: 1rem;
+    padding: 1rem 0 0 0 ;
+}
+.services-2 p{
+    margin: 0;
+    line-height: 3rem;
 }
 .about {
     grid-area: about;
     color: var(--text-color);
     display: grid;
     grid: 
-    "about-1" auto
-    "about-2" auto / 
+    "about-1 about-2" auto / 
     auto;
     place-items: center;
     text-align: center;
-    scroll-margin-top: 3.5rem;
-    margin-top: 5rem;
 }
 .about-1 {
     grid-area: about-1;
@@ -162,9 +169,26 @@ body {
     color: var(--text-color);
     text-align: center;
     overflow-x: auto;
-    scroll-margin-top: 10rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+}
+.plans-title p {
+    margin: 0;
+    padding: 0 1rem 1.5rem 1rem;
+}
+.hideplans{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50rem;
+}
+.hideplans i {
+    color: var(--secondary-color);
+}
+.plans-table {
+    transition: display 0.5s ease-out;
+    display: none;
 }
 table{
     color: var(--text-color);
@@ -341,8 +365,6 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
     auto;
     place-items: center;
     text-align: center;
-    scroll-margin-top: 3.5rem;
-    margin-bottom: 5rem;
 }
 .clients img {
     height: 20rem;
@@ -367,7 +389,6 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
     auto;
     place-items: center;
     text-align: center;
-    scroll-margin-top: 3.5rem;
 }
 .input-group {
     background: var(--secondary-color);
@@ -410,7 +431,7 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
 }
 .btn:hover,
 .btn:focus {
-    background: var(--quaternary-color) !important;
+    background: var(--tertiary-color) !important;
     color: var(--text-color);
     transition: background-color 1s ease-out;
     outline: 0;
