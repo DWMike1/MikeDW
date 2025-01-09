@@ -129,6 +129,11 @@ body {
 .services-1 img {
     width: 30rem;
     height: 20rem;
+    transition: transform .8s;
+}
+.services-1 img:hover {
+    transform: scale(1.5);
+    transition: transform .8s;
 }
 .services-2 {
     grid-area: services-2;
@@ -370,6 +375,11 @@ table:has(tr > *:nth-child(6):hover) tr > *:nth-child(6) {
     height: 20rem;
     width: 20rem;
     margin: 1rem;
+    transition: transform .8s;
+}
+.clients img:hover {
+    transform: scale(1.5);
+    transition: transform .8s;
 }
 .clients-1 {
     text-align: center;
